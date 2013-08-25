@@ -1,0 +1,19 @@
+<div class="input">
+	<div class="inputtext">
+		<label for="text"><f:translate key="tx_sms_domain_model_sms.text"/></label>
+	</div>
+	<div class="inputcontent">
+		<f:form.textarea property="text" cols="25" rows="15" />
+	</div>
+</div>
+<div class="input">
+	<div class="inputtext">
+		<label for="recipients"><f:translate key="tx_sms_domain_model_sms.recipients"/></label>
+	</div>
+	<div class="inputcontent">
+		<f:form.select multiple="true" size="10" property="recipients"
+					   value="{sms.recipients}" options="{recipients}"
+					   optionLabelField="name" selectAllByDefault="1"
+					   sortByOptionLabel="1"/>
+	</div>
+</div>

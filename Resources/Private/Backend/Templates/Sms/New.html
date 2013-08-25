@@ -1,0 +1,14 @@
+<f:layout name="Default"/>
+
+<f:section name="content">
+
+	<h1>New Sms</h1>
+	<f:flashMessages/>
+
+	<f:render partial="FormErrors" arguments="{object:Sms}"/>
+	<f:form action="send" name="sms" object="{sms}">
+		<f:render partial="Sms/FormFields" arguments="{recipients: recipients}"/>
+		<f:form.submit value="Send"/>
+	</f:form>
+
+</f:section>

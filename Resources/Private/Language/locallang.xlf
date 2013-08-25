@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-30T20:11:00Z" product-name="sms">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_sms_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_contact.name">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_contact.number">
+				<source>number</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_sms_domain_model_sms">
+				<source>Sms</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.text">
+				<source>text</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.status">
+				<source>status</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.recipients">
+				<source>recipients</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_sms_domain_model_queue">
+				<source>Queue</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_queue.sms">
+				<source>sms</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

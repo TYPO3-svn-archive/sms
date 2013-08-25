@@ -1,0 +1,28 @@
+<f:layout name="Default"/>
+
+<f:section name="content">
+	<h1>History</h1>
+
+	<f:flashMessages/>
+
+	<f:for each="{allSms}" as="sms">
+		<h2><f:format.crop maxCharacters="50" append="...">{sms.text}</f:format.crop></h2>
+		{sms.text}
+		<br /><br />
+		<b><f:link.action action="delivery" arguments="{sms:sms}">Show status</f:link.action></b>
+		<table class="tx_sms typo3-dblist">
+			<tr class="t3-row-header">
+				<th>Number</th>
+				<th>Name</th>
+			</tr>
+			<f:for each="{sms.recipients}" as="recipient">
+					<tr class="db_list_normal">
+						<td>{recipient.number}</td>
+						<td>{recipient.name}</td>
+					</tr>
+			</f:for>
+		</table>
+		<br /><br /><br />
+	</f:for>
+
+</f:section>

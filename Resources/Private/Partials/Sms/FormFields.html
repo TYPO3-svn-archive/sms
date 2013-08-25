@@ -1,0 +1,11 @@
+<label for="text">
+	<f:translate key="tx_sms_domain_model_sms.text"/>
+</label><br/>
+<f:form.textarea property="text" cols="40" rows="15"/><br/>
+<label for="recipients">
+	<f:translate key="tx_sms_domain_model_sms.recipients"/>
+</label><br/>
+<f:form.select multiple="true" size="10" property="recipients"
+			   value="{sms.recipients}" options="{recipients}"
+			   optionLabelField="name" selectAllByDefault="1"
+			   sortByOptionLabel="1"/>

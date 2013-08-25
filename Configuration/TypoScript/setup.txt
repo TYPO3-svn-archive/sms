@@ -1,0 +1,33 @@
+plugin.tx_sms {
+	view {
+		templateRootPath = {$plugin.tx_sms.view.templateRootPath}
+		partialRootPath = {$plugin.tx_sms.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_sms.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sms.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		rewrittenPropertyMapper = 1
+	}
+}
+
+module.tx_sms {
+	persistence {
+		storagePid = {$module.tx_sms.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_sms.view.templateRootPath}
+		partialRootPath = {$module.tx_sms.view.partialRootPath}
+		layoutRootPath = {$module.tx_sms.view.layoutRootPath}
+	}
+	settings {
+		esendex {
+			accountReference = {$module.tx_sms.settings.accountReference}
+			username = {$module.tx_sms.settings.username}
+			password = {$module.tx_sms.settings.password}
+			sender_address = {$module.tx_sms.settings.address}
+		}
+	}
+}

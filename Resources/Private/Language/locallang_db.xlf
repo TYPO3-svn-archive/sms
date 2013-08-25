@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-30T20:11:00Z" product-name="sms">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_sms_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_contact.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_contact.number">
+				<source>Number</source>
+			</trans-unit>
+
+			<trans-unit id="tx_sms_domain_model_sms">
+				<source>Sms</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_sms.recipients">
+				<source>Recipients</source>
+			</trans-unit>
+
+			<trans-unit id="tx_sms_domain_model_delivery">
+				<source>Delivery</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_delivery.message_id">
+				<source>Message ID</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_delivery.sms">
+				<source>Sms</source>
+			</trans-unit>
+			<trans-unit id="tx_sms_domain_model_delivery.recipient">
+				<source>Recipient</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
