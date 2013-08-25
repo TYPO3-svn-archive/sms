@@ -84,12 +84,11 @@ class Sms
 		$this->objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\PersistenceManager')->persistAll();
 		/** @var Contact $recipient */
 		foreach ($sms->getRecipients() as $recipient) {
-			/*$response = $this->getMessageInfos(
+			$response = $this->getMessageInfos(
 				$this->send($sms, $recipient)
-			);*/
+			);
 			$delivery = $this->deliveryRepository->findBySmsAndRecipient($sms, $recipient);
-			//$delivery->setMessageId($response->id());
-			$delivery->setMessageId('bbc457f8-6cdc-4466-a9fd-6e4ccedeac36');
+			$delivery->setMessageId($response->id());
 			$this->deliveryRepository->update($delivery);
 		}
 	}
